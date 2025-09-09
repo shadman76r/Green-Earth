@@ -82,18 +82,34 @@ https://openapi.programming-hero.com/api/plant/1
 - Website must be **mobile responsive**  
 
 ---
-#### 7) Create a README file to answer the following question-
+
+
+
+
 
 
 #### 1) What is the difference between var, let, and const?
 
+## Answer: var is hoisted and initialized with undefined and Can be redeclared within the same scope also can be reassigned another one is let so let is Hoisted but not initialized, leading to a "temporal dead zone" where accessing it before the declaration causes an error and cannot be redeclared in the same block scope and it is also can be reassigned and the last one is const which is like no change it cannot be redeclared or reassigned and cannot be reassigned, though the contents of objects or arrays can be modified.
+
 #### 2) What is the difference between map(), forEach(), and filter()? 
+
+## Answer: The map() function transforms each element of an array and returns a new array and the new array with the transformed value. The forEach() function Executes a provided function once for each array element but doesn't return anything. The last one is filter() it creates a new array with all elements that pass a given test (callback function) and the new array containing only the elements that satisfy the condition.
 
 #### 3) What are arrow functions in ES6?
 
+## Answer: The arrow function in ES6 provides a shorter syntax for writing functions and do not have their own 'this'. They inherit the 'this' value from the surrounding scope. like this one let addNumber = (a,b,c) => a+b+c; in this syntax no need for the function keyword and if the function body consists of a single expression, it returns that expression automatically.
+
 #### 4) How does destructuring assignment work in ES6?
 
+## Answer: Destructuring assignment allows me to extract values from arrays or objects and assign them to variables in a concise manner. like if i say object destructing like this let person = { name: 'namecanbeyours', age: 20 }; let { name, age } = person; 
+
+
 #### 5) Explain template literals in ES6. How are they different from string concatenation?
+
+## Answer: Template literals allow us to embed expressions within strings and provide a more readable syntax compared to string concatenation. like we can say that Template literals are a new way to work with strings introduced in ES6. They are enclosed by backticks (``) instead of single (') or double (") quotes, allowing use easier string formatting and manipulation. we can embed expressions inside a string using ${}. Another is this template literals can span multiple lines without needing escape characters also we can execute any expression inside ${} within a template literal. But in the other side String concatenation in that part we use + operator to combine the sting other like when we want multi-line String it requires using escape characters (\n) to create multi-line strings. so in the mean time i can say in short that, template literals simplify working with strings, making the code more concise, readable, and easier to maintain, especially when dealing with expressions or multi-line strings.
+
+
 
 ## ⚙️ Functionalities 
 

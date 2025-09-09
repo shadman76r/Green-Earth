@@ -100,133 +100,112 @@
     </header>
 
     <!-- loading spinner section  -->
-     <section id="spinner" class="flex justify-center items-center h-[150px] hidden">
+     <section id="spinner" class="flex justify-center items-center h-[150px]">
       <span class="loading loading-dots loading-lg"></span>
      </section>
 
-    <!-- main-container  -->
-    <main>
-      <!-- main section 1 -->
-      <div class="mt-[60px]">
-        <h1 class="text-center font-[600] text-[30px] mb-[30px]">
+     <!-- main section -->
+     <main>
+      <!-- section 1 -->
+      <div class="mt-[100px]">
+        <h1 class="text-center font-bold text-[2rem] mb-[25px]">
           Chose Your Trees
         </h1>
-        <div
-          class="max-w-[1430px] main-container grid grid-cols-12 mx-auto gap-4 max-md:flex max-md:flex-col"
-        >
-          <!-- catagory  -->
-          <div class="col-span-2 space-y-4">
-            <h1 class="font-bold">Categories</h1>
+        <div class="max-w-[1430px] main-container grid grid-cols-12 mx-auto gap-3 max-md:flex max-md:flex-col">
+          <!-- categories  -->
+          <div class="col-span-2 space-y-5">
+            <h1 class="font-bold p-4">Categories</h1>
 
             <div id="all-categories" class="list-none space-y-4"></div>
           </div>
 
-          <!-- card section  -->
+          <!-- card section for string the data   -->
           <div id="main-card-container" class="col-span-8">
-            <!-- cards wrapper -->
-            <div
-              id="all-plants"
-              class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 max-sm:flex max-sm:justify-center max-md:flex-col max-sm:w-full max-sm:items-center max-sm:p-3"
-            >
-              <!-- card  -->
+            <!-- cards -->
+            <div id="all-plants" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 max-sm:flex max-sm:justify-center max-md:flex-col max-sm:w-full max-sm:items-center max-sm:p-4">
+              <!-- Main cards -->
 
-              <!-- modal  -->
-              <!-- Open the modal using ID.showModal() method -->
-              <dialog
-                id="my_modal_5"
-                class="modal modal-bottom sm:modal-middle"
-              >
+              <!-- details  -->
+              <dialog id="myModals" class="modal modal-middle lg:modal-middle">
                 <div id="detailes-container" class="modal-box space-y-3">
            
                 </div>
               </dialog>
-              <!-- my_modal_5.showModal() -->
-
-              <!-- /////// -->
             </div>
           </div>
 
           <!-- add to cart section  -->
-          <div class="col-span-2 rounded-lg bg-white p-4">
-            <h1 class="font-[600] text-[20px]">Your Cart</h1>
+          <div class="col-span-2 rounded-lg bg-white p-5">
+            <h1 class="font-bold text-[20px]">Your Cart</h1>
             <div id="add-to-cart-main-section">
               
               
             </div>
             <!-- total -->
-             <div class="flex justify-between mt-[10px] text-[18px]">
+             <div class="flex justify-between mt-[10px] text-[1.25rem]">
                 <h1>Total:</h1>
-                <p>$<span id="cart-total-price">0</span></p>
+                <p>৳ <span id="cart-total-price">0</span></p>
                </div>
           </div>
         </div>
       </div>
 
-      <!-- main section 2  -->
+      <!-- section 2  -->
 
-      <div class="max-w-[1090px] mx-auto mt-[50px]">
-        <h1 class="text-center font-bold text-[30px] mb-5">
+      <div class="max-w-[1090px] mx-auto mt-[60px]">
+        <h1 class="text-center font-bold text-[2rem] mb-6">
           About the Campaign
         </h1>
-        <div class="flex justify-between items-center max-sm:flex-col">
+        <div class="flex justify-between items-center max-sm:flex-col gap-9 p-3">
           <div class="flex-1">
             <img src="./assets/about.png" alt="Plants" />
           </div>
-          <div class="flex-1 max-sm:p-5 max-sm:text-justify">
+          <div class="flex-1 max-sm:p-6 max-sm:text-justify">
             <p>
               Green Earth is a global tree plantation initiative dedicated to
               fighting climate change. Since our start, we’ve planted over
               500,000 trees worldwide. By joining our campaign, you help restore
               forests, create habitats for wildlife, and combat global warming.
             </p>
+            <div class="p-9">
             <li>Restoration of natural habitats</li>
             <li>Improvement of air quality</li>
             <li>Support for local communities</li>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- main section 3  -->
+      <!-- section 3  -->
 
-      <div
-        class="bg-[#cff0dc] h-[300px] max-sm:h-auto flex justify-center items-center flex-col mt-[80px]"
-      >
-        <h1 class="text-center font-bold mb-6 text-[26px]">Our Impact</h1>
-        <div
-          class="flex justify-between items-center w-11/12 mx-auto max-sm:flex-col max-md:space-y-4"
-        >
-          <div
-            class="w-[350px] h-[100px] flex flex-col items-center justify-center bg-white rounded-lg"
-          >
-            <p class="text-[#15803d] text-[20px] font-[600]">500k+</p>
+      <div class="bg-[#cff0dc] h-[300px] max-sm:h-auto flex justify-center items-center flex-col mt-[80px]">
+        <h1 class="text-center font-bold mb-7 text-[1.6rem]">Our Impact</h1>
+        <div class="flex justify-between items-center w-10/12 mx-auto max-sm:flex-col max-md:space-y-4">
+          <div class="w-[350px] h-[150px] flex flex-col items-center justify-center bg-white rounded-lg shadow-xl hover:rotate-2">
+            <p class="text-[#15803d] text-[2rem] font-bold">500k+</p>
             <p>Trees Planted</p>
           </div>
-          <div
-            class="w-[350px] h-[100px] flex flex-col items-center justify-center bg-white rounded-lg"
-          >
-            <p class="text-[#15803d] text-[20px] font-[600]">120+</p>
+          <div class="w-[350px] h-[150px] flex flex-col items-center justify-center bg-white rounded-lg shadow-xl hover:rotate-2">
+            <p class="text-[#15803d] text-[2rem] font-bold">120+</p>
             <p>Communities Involved</p>
           </div>
-          <div
-            class="w-[350px] h-[100px] flex flex-col items-center justify-center bg-white rounded-lg max-sm:mb-[20px]"
-          >
-            <p class="text-[#15803d] text-[20px] font-[600]">30+</p>
+          <div class="w-[350px] h-[150px] flex flex-col items-center justify-center bg-white rounded-lg max-sm:mb-[20px] shadow-xl hover:rotate-2">
+            <p class="text-[#15803d] text-[2rem] font-bold">30+</p>
             <p>Countries Reached</p>
           </div>
         </div>
       </div>
     </main>
 
-    <!-- footer section  -->
-    <footer>
-      <div
-        class="flex flex-col justify-center items-center h-[390px] bg-[#166534]"
-      >
-        <h1 class="text-white font-bold text-[25px]">Plant a Tree Today</h1>
+    <!-- Footer section -->
+
+     <footer>
+      <div class="flex flex-col justify-center items-center h-[400px] bg-[#166534]">
+        <h1 class="text-white font-bold text-[1.5rem]">Plant a Tree Today</h1>
         <div
           class="w-[500px] p-[20px] bg-[#15803d] rounded-lg mt-[20px] mb-[50px] max-sm:w-full"
         >
-          <form action="#">
+          <form>
             <fieldset class="fieldset">
               <input type="text" class="input w-full" placeholder="Your Name" />
             </fieldset>
@@ -238,10 +217,11 @@
               />
             </fieldset>
             <select class="select w-full mt-[7px]">
-              <option disabled selected>Number of Treesr</option>
+              <option disabled selected>Number of Trees</option>
+              <option>5</option>
               <option>10</option>
-              <option>25</option>
-              <option>50</option>
+              <option>15</option>
+              <option>20</option>
             </select>
             <button
               class="w-full h-[43px] rounded-lg bg-[#facc15] text-[#15803d] flex justify-center items-center mt-[15px] cursor-pointer"
@@ -251,12 +231,13 @@
           </form>
         </div>
       </div>
-      <!-- secend footer Section  -->
+      <!-- 2nd section -->
 
-      <div class="bg-[#14532D] h-[70px] flex items-center justify-center">
+      <div class="bg-[#14532D] h-[72px] flex items-center justify-center">
         <p class="text-white">© 2025 Green Earth. All Rights Reserved.</p>
       </div>
     </footer>
+    
 
     <script src="./js/script.js"></script>
   </body>
